@@ -1,0 +1,725 @@
+$date
+	Wed Mar 10 16:51:19 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module dec_exe_tb $end
+$var wire 64 ! rsp [63:0] $end
+$var wire 64 " rsi [63:0] $end
+$var wire 64 # rdx [63:0] $end
+$var wire 64 $ rdi [63:0] $end
+$var wire 64 % rcx [63:0] $end
+$var wire 64 & rbx [63:0] $end
+$var wire 64 ' rbp [63:0] $end
+$var wire 64 ( rax [63:0] $end
+$var wire 64 ) r9 [63:0] $end
+$var wire 64 * r8 [63:0] $end
+$var wire 64 + r14 [63:0] $end
+$var wire 64 , r13 [63:0] $end
+$var wire 64 - r12 [63:0] $end
+$var wire 64 . r11 [63:0] $end
+$var wire 64 / r10 [63:0] $end
+$var wire 64 0 d_valB [63:0] $end
+$var wire 64 1 d_valA [63:0] $end
+$var wire 4 2 d_srcB [3:0] $end
+$var wire 4 3 d_srcA [3:0] $end
+$var wire 64 4 d_rvalB [63:0] $end
+$var wire 64 5 d_rvalA [63:0] $end
+$var wire 4 6 d_dstM [3:0] $end
+$var wire 4 7 d_dstE [3:0] $end
+$var wire 64 8 E_valC [63:0] $end
+$var wire 64 9 E_valB [63:0] $end
+$var wire 64 : E_valA [63:0] $end
+$var wire 3 ; E_stat [2:0] $end
+$var wire 4 < E_ifun [3:0] $end
+$var wire 4 = E_icode [3:0] $end
+$var wire 4 > E_dstM [3:0] $end
+$var wire 4 ? E_dstE [3:0] $end
+$var wire 64 @ D_valP [63:0] $end
+$var wire 64 A D_valC [63:0] $end
+$var wire 3 B D_stat [2:0] $end
+$var wire 4 C D_rB [3:0] $end
+$var wire 4 D D_rA [3:0] $end
+$var wire 4 E D_ifun [3:0] $end
+$var wire 4 F D_icode [3:0] $end
+$var reg 1 G D_bubble $end
+$var reg 1 H D_stall $end
+$var reg 1 I E_bubble $end
+$var reg 4 J M_dstE [3:0] $end
+$var reg 4 K M_dstM [3:0] $end
+$var reg 64 L M_valE [63:0] $end
+$var reg 4 M W_dstE [3:0] $end
+$var reg 4 N W_dstM [3:0] $end
+$var reg 64 O W_valE [63:0] $end
+$var reg 64 P W_valM [63:0] $end
+$var reg 1 Q clk $end
+$var reg 64 R data [63:0] $end
+$var reg 4 S e_dstE [3:0] $end
+$var reg 64 T e_valE [63:0] $end
+$var reg 4 U f_icode [3:0] $end
+$var reg 4 V f_ifun [3:0] $end
+$var reg 4 W f_rA [3:0] $end
+$var reg 4 X f_rB [3:0] $end
+$var reg 3 Y f_stat [2:0] $end
+$var reg 64 Z f_valC [63:0] $end
+$var reg 64 [ f_valP [63:0] $end
+$var reg 1 \ rst $end
+$scope module rgfilemod $end
+$var wire 4 ] W_dstE_i [3:0] $end
+$var wire 4 ^ W_dstM_i [3:0] $end
+$var wire 64 _ W_valE_i [63:0] $end
+$var wire 64 ` W_valM_i [63:0] $end
+$var wire 1 Q clk $end
+$var wire 1 a r10_wrt $end
+$var wire 1 b r11_wrt $end
+$var wire 1 c r12_wrt $end
+$var wire 1 d r13_wrt $end
+$var wire 1 e r14_wrt $end
+$var wire 1 f r8_wrt $end
+$var wire 1 g r9_wrt $end
+$var wire 1 h rax_wrt $end
+$var wire 1 i rbp_wrt $end
+$var wire 1 j rbx_wrt $end
+$var wire 1 k rcx_wrt $end
+$var wire 1 l rdi_wrt $end
+$var wire 1 m rdx_wrt $end
+$var wire 1 n rsi_wrt $end
+$var wire 1 o rsp_wrt $end
+$var wire 1 \ rst $end
+$var wire 64 p rsp_dat [63:0] $end
+$var wire 64 q rsp [63:0] $end
+$var wire 64 r rsi_dat [63:0] $end
+$var wire 64 s rsi [63:0] $end
+$var wire 64 t rdx_dat [63:0] $end
+$var wire 64 u rdx [63:0] $end
+$var wire 64 v rdi_dat [63:0] $end
+$var wire 64 w rdi [63:0] $end
+$var wire 64 x rcx_dat [63:0] $end
+$var wire 64 y rcx [63:0] $end
+$var wire 64 z rbx_dat [63:0] $end
+$var wire 64 { rbx [63:0] $end
+$var wire 64 | rbp_dat [63:0] $end
+$var wire 64 } rbp [63:0] $end
+$var wire 64 ~ rax_dat [63:0] $end
+$var wire 64 !" rax [63:0] $end
+$var wire 64 "" r9_dat [63:0] $end
+$var wire 64 #" r9 [63:0] $end
+$var wire 64 $" r8_dat [63:0] $end
+$var wire 64 %" r8 [63:0] $end
+$var wire 64 &" r14_dat [63:0] $end
+$var wire 64 '" r14 [63:0] $end
+$var wire 64 (" r13_dat [63:0] $end
+$var wire 64 )" r13 [63:0] $end
+$var wire 64 *" r12_dat [63:0] $end
+$var wire 64 +" r12 [63:0] $end
+$var wire 64 ," r11_dat [63:0] $end
+$var wire 64 -" r11 [63:0] $end
+$var wire 64 ." r10_dat [63:0] $end
+$var wire 64 /" r10 [63:0] $end
+$var wire 4 0" d_srcB_i [3:0] $end
+$var wire 4 1" d_srcA_i [3:0] $end
+$var wire 64 2" d_rvalB_o [63:0] $end
+$var wire 64 3" d_rvalA_o [63:0] $end
+$scope module r10_reg $end
+$var wire 1 Q clk $end
+$var wire 1 a enable $end
+$var wire 64 4" in [63:0] $end
+$var wire 64 5" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 6" out [63:0] $end
+$upscope $end
+$scope module r11_reg $end
+$var wire 1 Q clk $end
+$var wire 1 b enable $end
+$var wire 64 7" in [63:0] $end
+$var wire 64 8" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 9" out [63:0] $end
+$upscope $end
+$scope module r12_reg $end
+$var wire 1 Q clk $end
+$var wire 1 c enable $end
+$var wire 64 :" in [63:0] $end
+$var wire 64 ;" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 <" out [63:0] $end
+$upscope $end
+$scope module r13_reg $end
+$var wire 1 Q clk $end
+$var wire 1 d enable $end
+$var wire 64 =" in [63:0] $end
+$var wire 64 >" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 ?" out [63:0] $end
+$upscope $end
+$scope module r14_reg $end
+$var wire 1 Q clk $end
+$var wire 1 e enable $end
+$var wire 64 @" in [63:0] $end
+$var wire 64 A" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 B" out [63:0] $end
+$upscope $end
+$scope module r8_reg $end
+$var wire 1 Q clk $end
+$var wire 1 f enable $end
+$var wire 64 C" in [63:0] $end
+$var wire 64 D" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 E" out [63:0] $end
+$upscope $end
+$scope module r9_reg $end
+$var wire 1 Q clk $end
+$var wire 1 g enable $end
+$var wire 64 F" in [63:0] $end
+$var wire 64 G" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 H" out [63:0] $end
+$upscope $end
+$scope module rax_reg $end
+$var wire 1 Q clk $end
+$var wire 1 h enable $end
+$var wire 64 I" in [63:0] $end
+$var wire 64 J" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 K" out [63:0] $end
+$upscope $end
+$scope module rbp_reg $end
+$var wire 1 Q clk $end
+$var wire 1 i enable $end
+$var wire 64 L" in [63:0] $end
+$var wire 64 M" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 N" out [63:0] $end
+$upscope $end
+$scope module rbx_reg $end
+$var wire 1 Q clk $end
+$var wire 1 j enable $end
+$var wire 64 O" in [63:0] $end
+$var wire 64 P" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 Q" out [63:0] $end
+$upscope $end
+$scope module rcx_reg $end
+$var wire 1 Q clk $end
+$var wire 1 k enable $end
+$var wire 64 R" in [63:0] $end
+$var wire 64 S" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 T" out [63:0] $end
+$upscope $end
+$scope module rdi_reg $end
+$var wire 1 Q clk $end
+$var wire 1 l enable $end
+$var wire 64 U" in [63:0] $end
+$var wire 64 V" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 W" out [63:0] $end
+$upscope $end
+$scope module rdx_reg $end
+$var wire 1 Q clk $end
+$var wire 1 m enable $end
+$var wire 64 X" in [63:0] $end
+$var wire 64 Y" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 Z" out [63:0] $end
+$upscope $end
+$scope module rsi_reg $end
+$var wire 1 Q clk $end
+$var wire 1 n enable $end
+$var wire 64 [" in [63:0] $end
+$var wire 64 \" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 ]" out [63:0] $end
+$upscope $end
+$scope module rsp_reg $end
+$var wire 1 Q clk $end
+$var wire 1 o enable $end
+$var wire 64 ^" in [63:0] $end
+$var wire 64 _" resetval [63:0] $end
+$var wire 1 \ rst $end
+$var reg 64 `" out [63:0] $end
+$upscope $end
+$upscope $end
+$scope module snd $end
+$var wire 4 a" D_rB_i [3:0] $end
+$var wire 4 b" D_rA_i [3:0] $end
+$var wire 4 c" D_icode_i [3:0] $end
+$var reg 4 d" d_dstE_o [3:0] $end
+$var reg 4 e" d_dstM_o [3:0] $end
+$var reg 4 f" d_srcA_o [3:0] $end
+$var reg 4 g" d_srcB_o [3:0] $end
+$upscope $end
+$scope module y86_decode $end
+$var wire 4 h" M_dstE_i [3:0] $end
+$var wire 4 i" M_dstM_i [3:0] $end
+$var wire 64 j" M_valE_i [63:0] $end
+$var wire 4 k" W_dstE_i [3:0] $end
+$var wire 4 l" W_dstM_i [3:0] $end
+$var wire 64 m" W_valE_i [63:0] $end
+$var wire 64 n" W_valM_i [63:0] $end
+$var wire 64 o" d_rvalA_i [63:0] $end
+$var wire 64 p" d_rvalB_i [63:0] $end
+$var wire 4 q" d_srcA_i [3:0] $end
+$var wire 4 r" d_srcB_i [3:0] $end
+$var wire 4 s" e_dstE_i [3:0] $end
+$var wire 64 t" e_valE_i [63:0] $end
+$var wire 64 u" m_valM_i [63:0] $end
+$var wire 64 v" D_valP_i [63:0] $end
+$var wire 4 w" D_icode_i [3:0] $end
+$var reg 64 x" d_valA_o [63:0] $end
+$var reg 64 y" d_valB_o [63:0] $end
+$upscope $end
+$scope module y86_decode_reg $end
+$var wire 1 G D_bubble_i $end
+$var wire 1 H D_stall_i $end
+$var wire 1 Q clk $end
+$var wire 4 z" f_icode_i [3:0] $end
+$var wire 4 {" f_ifun_i [3:0] $end
+$var wire 4 |" f_rA_i [3:0] $end
+$var wire 4 }" f_rB_i [3:0] $end
+$var wire 3 ~" f_stat_i [2:0] $end
+$var wire 64 !# f_valC_i [63:0] $end
+$var wire 64 "# f_valP_i [63:0] $end
+$var wire 1 \ rst $end
+$var reg 4 ## D_icode_o [3:0] $end
+$var reg 4 $# D_ifun_o [3:0] $end
+$var reg 4 %# D_rA_o [3:0] $end
+$var reg 4 &# D_rB_o [3:0] $end
+$var reg 3 '# D_stat_o [2:0] $end
+$var reg 64 (# D_valC_o [63:0] $end
+$var reg 64 )# D_valP_o [63:0] $end
+$upscope $end
+$scope module y86_execute_reg $end
+$var wire 4 *# D_icode_i [3:0] $end
+$var wire 4 +# D_ifun_i [3:0] $end
+$var wire 3 ,# D_stat_i [2:0] $end
+$var wire 64 -# D_valC_i [63:0] $end
+$var wire 1 I E_bubble_i $end
+$var wire 1 Q clk $end
+$var wire 4 .# d_dstE_i [3:0] $end
+$var wire 4 /# d_dstM_i [3:0] $end
+$var wire 4 0# d_srcA_i [3:0] $end
+$var wire 4 1# d_srcB_i [3:0] $end
+$var wire 64 2# d_valA_i [63:0] $end
+$var wire 64 3# d_valB_i [63:0] $end
+$var wire 1 \ rst $end
+$var reg 4 4# E_dstE_o [3:0] $end
+$var reg 4 5# E_dstM_o [3:0] $end
+$var reg 4 6# E_icode_o [3:0] $end
+$var reg 4 7# E_ifun_o [3:0] $end
+$var reg 3 8# E_stat_o [2:0] $end
+$var reg 64 9# E_valA_o [63:0] $end
+$var reg 64 :# E_valB_o [63:0] $end
+$var reg 64 ;# E_valC_o [63:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 ;#
+b0 :#
+b0 9#
+b0 8#
+b0 7#
+b0 6#
+b1111 5#
+b1111 4#
+b0 3#
+b0 2#
+b1111 1#
+b1111 0#
+bx /#
+b1111 .#
+b0 -#
+b0 ,#
+b0 +#
+b0 *#
+b0 )#
+b0 (#
+b0 '#
+b1111 &#
+b1111 %#
+b0 $#
+b0 ##
+bx "#
+bx !#
+bx ~"
+bx }"
+bx |"
+bx {"
+bx z"
+b0 y"
+b0 x"
+b0 w"
+b0 v"
+bx u"
+bx t"
+bx s"
+b1111 r"
+b1111 q"
+b0 p"
+b0 o"
+bx n"
+bx m"
+bx l"
+bx k"
+bx j"
+bx i"
+bx h"
+b1111 g"
+b1111 f"
+bx e"
+b1111 d"
+b0 c"
+b1111 b"
+b1111 a"
+bx `"
+b0 _"
+bx ^"
+bx ]"
+b0 \"
+bx ["
+bx Z"
+b0 Y"
+bx X"
+bx W"
+b0 V"
+bx U"
+bx T"
+b0 S"
+bx R"
+bx Q"
+b0 P"
+bx O"
+bx N"
+b0 M"
+bx L"
+bx K"
+b0 J"
+bx I"
+bx H"
+b0 G"
+bx F"
+bx E"
+b0 D"
+bx C"
+bx B"
+b0 A"
+bx @"
+bx ?"
+b0 >"
+bx ="
+bx <"
+b0 ;"
+bx :"
+bx 9"
+b0 8"
+bx 7"
+bx 6"
+b0 5"
+bx 4"
+b0 3"
+b0 2"
+b1111 1"
+b1111 0"
+bx /"
+bx ."
+bx -"
+bx ,"
+bx +"
+bx *"
+bx )"
+bx ("
+bx '"
+bx &"
+bx %"
+bx $"
+bx #"
+bx ""
+bx !"
+bx ~
+bx }
+bx |
+bx {
+bx z
+bx y
+bx x
+bx w
+bx v
+bx u
+bx t
+bx s
+bx r
+bx q
+bx p
+xo
+xn
+xm
+xl
+xk
+xj
+xi
+xh
+xg
+xf
+xe
+xd
+xc
+xb
+xa
+bx `
+bx _
+bx ^
+bx ]
+x\
+bx [
+bx Z
+bx Y
+bx X
+bx W
+bx V
+bx U
+bx T
+bx S
+bx R
+0Q
+bx P
+bx O
+bx N
+bx M
+bx L
+bx K
+bx J
+xI
+xH
+xG
+b0 F
+b0 E
+b1111 D
+b1111 C
+b0 B
+b0 A
+b0 @
+b1111 ?
+b1111 >
+b0 =
+b0 <
+b0 ;
+b0 :
+b0 9
+b0 8
+b1111 7
+bx 6
+b0 5
+b0 4
+b1111 3
+b1111 2
+b0 1
+b0 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#50000
+b101 7
+b101 d"
+b101 .#
+b1010 @
+b1010 v"
+b1010 )#
+b10 A
+b10 (#
+b10 -#
+b101 C
+b101 a"
+b101 &#
+b100 D
+b100 b"
+b100 %#
+b11 F
+b11 c"
+b11 w"
+b11 ##
+b11 *#
+bx >
+bx 5#
+1h
+0k
+0m
+0j
+0o
+0i
+0n
+0l
+0f
+0g
+0a
+0b
+0c
+0d
+0e
+b0 ~
+b0 I"
+b0 x
+b0 R"
+b0 t
+b0 X"
+b0 z
+b0 O"
+b0 p
+b0 ^"
+b0 |
+b0 L"
+b0 r
+b0 ["
+b0 v
+b0 U"
+b0 $"
+b0 C"
+b0 ""
+b0 F"
+b0 ."
+b0 4"
+b0 ,"
+b0 7"
+b0 *"
+b0 :"
+b0 ("
+b0 ="
+b0 &"
+b0 @"
+b0 N
+b0 ^
+b0 l"
+b0 M
+b0 ]
+b0 k"
+b0 K
+b0 i"
+b0 J
+b0 h"
+b0 S
+b0 s"
+b0 P
+b0 `
+b0 n"
+b0 O
+b0 _
+b0 m"
+b0 R
+b0 u"
+b0 L
+b0 j"
+b0 T
+b0 t"
+b0 Y
+b0 ~"
+b10 Z
+b10 !#
+b1010 [
+b1010 "#
+b101 X
+b101 }"
+b100 W
+b100 |"
+b0 V
+b0 {"
+b11 U
+b11 z"
+0I
+0G
+0H
+0\
+1Q
+#100000
+0Q
+#150000
+b110 7
+b110 d"
+b110 .#
+b0 (
+b0 !"
+b0 K"
+b101 ?
+b101 4#
+b10 8
+b10 ;#
+b11 =
+b11 6#
+b11 A
+b11 (#
+b11 -#
+b110 C
+b110 a"
+b110 &#
+b101 D
+b101 b"
+b101 %#
+b11 Z
+b11 !#
+b110 X
+b110 }"
+b101 W
+b101 |"
+1Q
+#200000
+0Q
+#250000
+bx 1
+bx x"
+bx 2#
+bx 5
+bx 3"
+bx o"
+b1111 2
+b1111 0"
+b1111 g"
+b1111 r"
+b1111 1#
+b101 3
+b101 1"
+b101 f"
+b101 q"
+b101 0#
+b10 @
+b10 v"
+b10 )#
+b1000 A
+b1000 (#
+b1000 -#
+b110 F
+b110 c"
+b110 w"
+b110 ##
+b110 *#
+b110 ?
+b110 4#
+b11 8
+b11 ;#
+b1000 Z
+b1000 !#
+b10 [
+b10 "#
+b110 U
+b110 z"
+1Q
+#300000
+0Q
+#350000

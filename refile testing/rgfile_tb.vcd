@@ -1,0 +1,487 @@
+$date
+	Wed Mar 10 17:21:46 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module rgfile_tb $end
+$var wire 64 ! rsp [63:0] $end
+$var wire 64 " rsi [63:0] $end
+$var wire 64 # rdx [63:0] $end
+$var wire 64 $ rdi [63:0] $end
+$var wire 64 % rcx [63:0] $end
+$var wire 64 & rbx [63:0] $end
+$var wire 64 ' rbp [63:0] $end
+$var wire 64 ( rax [63:0] $end
+$var wire 64 ) r9 [63:0] $end
+$var wire 64 * r8 [63:0] $end
+$var wire 64 + r14 [63:0] $end
+$var wire 64 , r13 [63:0] $end
+$var wire 64 - r12 [63:0] $end
+$var wire 64 . r11 [63:0] $end
+$var wire 64 / r10 [63:0] $end
+$var wire 64 0 d_rvalB_o [63:0] $end
+$var wire 64 1 d_rvalA_o [63:0] $end
+$var reg 4 2 W_dstE_i [3:0] $end
+$var reg 4 3 W_dstM_i [3:0] $end
+$var reg 64 4 W_valE_i [63:0] $end
+$var reg 64 5 W_valM_i [63:0] $end
+$var reg 1 6 clk $end
+$var reg 4 7 d_srcA_i [3:0] $end
+$var reg 4 8 d_srcB_i [3:0] $end
+$var reg 1 9 rst $end
+$var integer 32 : cnt [31:0] $end
+$scope module r0 $end
+$var wire 4 ; W_dstE_i [3:0] $end
+$var wire 4 < W_dstM_i [3:0] $end
+$var wire 64 = W_valE_i [63:0] $end
+$var wire 64 > W_valM_i [63:0] $end
+$var wire 1 6 clk $end
+$var wire 4 ? d_srcA_i [3:0] $end
+$var wire 4 @ d_srcB_i [3:0] $end
+$var wire 1 A r10_wrt $end
+$var wire 1 B r11_wrt $end
+$var wire 1 C r12_wrt $end
+$var wire 1 D r13_wrt $end
+$var wire 1 E r14_wrt $end
+$var wire 1 F r8_wrt $end
+$var wire 1 G r9_wrt $end
+$var wire 1 H rax_wrt $end
+$var wire 1 I rbp_wrt $end
+$var wire 1 J rbx_wrt $end
+$var wire 1 K rcx_wrt $end
+$var wire 1 L rdi_wrt $end
+$var wire 1 M rdx_wrt $end
+$var wire 1 N rsi_wrt $end
+$var wire 1 O rsp_wrt $end
+$var wire 1 9 rst $end
+$var wire 64 P rsp_dat [63:0] $end
+$var wire 64 Q rsp [63:0] $end
+$var wire 64 R rsi_dat [63:0] $end
+$var wire 64 S rsi [63:0] $end
+$var wire 64 T rdx_dat [63:0] $end
+$var wire 64 U rdx [63:0] $end
+$var wire 64 V rdi_dat [63:0] $end
+$var wire 64 W rdi [63:0] $end
+$var wire 64 X rcx_dat [63:0] $end
+$var wire 64 Y rcx [63:0] $end
+$var wire 64 Z rbx_dat [63:0] $end
+$var wire 64 [ rbx [63:0] $end
+$var wire 64 \ rbp_dat [63:0] $end
+$var wire 64 ] rbp [63:0] $end
+$var wire 64 ^ rax_dat [63:0] $end
+$var wire 64 _ rax [63:0] $end
+$var wire 64 ` r9_dat [63:0] $end
+$var wire 64 a r9 [63:0] $end
+$var wire 64 b r8_dat [63:0] $end
+$var wire 64 c r8 [63:0] $end
+$var wire 64 d r14_dat [63:0] $end
+$var wire 64 e r14 [63:0] $end
+$var wire 64 f r13_dat [63:0] $end
+$var wire 64 g r13 [63:0] $end
+$var wire 64 h r12_dat [63:0] $end
+$var wire 64 i r12 [63:0] $end
+$var wire 64 j r11_dat [63:0] $end
+$var wire 64 k r11 [63:0] $end
+$var wire 64 l r10_dat [63:0] $end
+$var wire 64 m r10 [63:0] $end
+$var wire 64 n d_rvalB_o [63:0] $end
+$var wire 64 o d_rvalA_o [63:0] $end
+$scope module r10_reg $end
+$var wire 1 6 clk $end
+$var wire 1 A enable $end
+$var wire 64 p in [63:0] $end
+$var wire 64 q resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 r out [63:0] $end
+$upscope $end
+$scope module r11_reg $end
+$var wire 1 6 clk $end
+$var wire 1 B enable $end
+$var wire 64 s in [63:0] $end
+$var wire 64 t resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 u out [63:0] $end
+$upscope $end
+$scope module r12_reg $end
+$var wire 1 6 clk $end
+$var wire 1 C enable $end
+$var wire 64 v in [63:0] $end
+$var wire 64 w resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 x out [63:0] $end
+$upscope $end
+$scope module r13_reg $end
+$var wire 1 6 clk $end
+$var wire 1 D enable $end
+$var wire 64 y in [63:0] $end
+$var wire 64 z resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 { out [63:0] $end
+$upscope $end
+$scope module r14_reg $end
+$var wire 1 6 clk $end
+$var wire 1 E enable $end
+$var wire 64 | in [63:0] $end
+$var wire 64 } resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 ~ out [63:0] $end
+$upscope $end
+$scope module r8_reg $end
+$var wire 1 6 clk $end
+$var wire 1 F enable $end
+$var wire 64 !" in [63:0] $end
+$var wire 64 "" resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 #" out [63:0] $end
+$upscope $end
+$scope module r9_reg $end
+$var wire 1 6 clk $end
+$var wire 1 G enable $end
+$var wire 64 $" in [63:0] $end
+$var wire 64 %" resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 &" out [63:0] $end
+$upscope $end
+$scope module rax_reg $end
+$var wire 1 6 clk $end
+$var wire 1 H enable $end
+$var wire 64 '" in [63:0] $end
+$var wire 64 (" resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 )" out [63:0] $end
+$upscope $end
+$scope module rbp_reg $end
+$var wire 1 6 clk $end
+$var wire 1 I enable $end
+$var wire 64 *" in [63:0] $end
+$var wire 64 +" resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 ," out [63:0] $end
+$upscope $end
+$scope module rbx_reg $end
+$var wire 1 6 clk $end
+$var wire 1 J enable $end
+$var wire 64 -" in [63:0] $end
+$var wire 64 ." resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 /" out [63:0] $end
+$upscope $end
+$scope module rcx_reg $end
+$var wire 1 6 clk $end
+$var wire 1 K enable $end
+$var wire 64 0" in [63:0] $end
+$var wire 64 1" resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 2" out [63:0] $end
+$upscope $end
+$scope module rdi_reg $end
+$var wire 1 6 clk $end
+$var wire 1 L enable $end
+$var wire 64 3" in [63:0] $end
+$var wire 64 4" resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 5" out [63:0] $end
+$upscope $end
+$scope module rdx_reg $end
+$var wire 1 6 clk $end
+$var wire 1 M enable $end
+$var wire 64 6" in [63:0] $end
+$var wire 64 7" resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 8" out [63:0] $end
+$upscope $end
+$scope module rsi_reg $end
+$var wire 1 6 clk $end
+$var wire 1 N enable $end
+$var wire 64 9" in [63:0] $end
+$var wire 64 :" resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 ;" out [63:0] $end
+$upscope $end
+$scope module rsp_reg $end
+$var wire 1 6 clk $end
+$var wire 1 O enable $end
+$var wire 64 <" in [63:0] $end
+$var wire 64 =" resetval [63:0] $end
+$var wire 1 9 rst $end
+$var reg 64 >" out [63:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx >"
+b0 ="
+bx <"
+bx ;"
+b0 :"
+bx 9"
+bx 8"
+b0 7"
+bx 6"
+bx 5"
+b0 4"
+bx 3"
+bx 2"
+b0 1"
+bx 0"
+bx /"
+b0 ."
+bx -"
+bx ,"
+b0 +"
+bx *"
+bx )"
+b0 ("
+bx '"
+bx &"
+b0 %"
+bx $"
+bx #"
+b0 ""
+bx !"
+bx ~
+b0 }
+bx |
+bx {
+b0 z
+bx y
+bx x
+b0 w
+bx v
+bx u
+b0 t
+bx s
+bx r
+b0 q
+bx p
+bx o
+bx n
+bx m
+bx l
+bx k
+bx j
+bx i
+bx h
+bx g
+bx f
+bx e
+bx d
+bx c
+bx b
+bx a
+bx `
+bx _
+bx ^
+bx ]
+bx \
+bx [
+bx Z
+bx Y
+bx X
+bx W
+bx V
+bx U
+bx T
+bx S
+bx R
+bx Q
+bx P
+xO
+xN
+xM
+xL
+xK
+xJ
+xI
+xH
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+b0 :
+x9
+bx 8
+bx 7
+06
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#1000
+19
+#5000
+b0 0
+b0 n
+b0 1
+b0 o
+b0 (
+b0 _
+b0 )"
+b0 %
+b0 Y
+b0 2"
+b0 #
+b0 U
+b0 8"
+b0 &
+b0 [
+b0 /"
+b0 !
+b0 Q
+b0 >"
+b0 '
+b0 ]
+b0 ,"
+b0 "
+b0 S
+b0 ;"
+b0 $
+b0 W
+b0 5"
+b0 *
+b0 c
+b0 #"
+b0 )
+b0 a
+b0 &"
+b0 /
+b0 m
+b0 r
+b0 .
+b0 k
+b0 u
+b0 -
+b0 i
+b0 x
+b0 ,
+b0 g
+b0 {
+b0 +
+b0 e
+b0 ~
+b1 :
+16
+#10000
+b10 :
+06
+#11000
+b10011 ^
+b10011 '"
+b10011 X
+b10011 0"
+b10011 T
+b10011 6"
+b10011 Z
+b10011 -"
+b10011 P
+b10011 <"
+b10011 \
+b10011 *"
+b10011 R
+b10011 9"
+b10011 V
+b10011 3"
+b10011 b
+b10011 !"
+b10011 `
+b10011 $"
+b10011 l
+b10011 p
+b10011 j
+b10011 s
+b10011 h
+b10011 v
+b10011 f
+b10011 y
+b10011 d
+b10011 |
+1H
+0K
+0M
+0J
+0O
+0I
+0N
+0L
+0F
+0G
+0A
+0B
+0C
+0D
+0E
+b10011 4
+b10011 =
+b0 2
+b0 ;
+b1111 3
+b1111 <
+09
+#15000
+b0x00xx 0
+b0x00xx n
+b0x00xx 1
+b0x00xx o
+b10011 (
+b10011 _
+b10011 )"
+b11 :
+16
+#20000
+b100 :
+06
+#25000
+b101 :
+16
+#30000
+b110 :
+06
+#35000
+b111 :
+16
+#40000
+b1000 :
+06
+#45000
+b1001 :
+16
+#50000
+b1010 :
+06
+#55000
+b1011 :
+16
+#60000
